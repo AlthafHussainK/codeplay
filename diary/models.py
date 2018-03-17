@@ -7,3 +7,6 @@ class TravelDiary(models.Model):
     heading = models.CharField(max_length = 100)
     body = models.CharField(max_length = 10000)
 
+    def __str__(self):
+        return self.heading
+
